@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevent scrolling when not zoomed */
+    color: #333;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%; /* Increase image size for mobile devices */
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Removed subtitles styles */
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    img {
+        max-width: 50%; /* Adjust image width for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%; /* Ensure image fits within the viewport */
+        height: auto;
+    }
+}
