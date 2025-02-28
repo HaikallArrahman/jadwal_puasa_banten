@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const image = document.getElementById("main-image");
+    const audio = document.getElementById("background-sound");
 
     function isMobile() {
         return window.innerWidth <= 768;
@@ -15,5 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // Removed zoom toggle
     });
 
-    // Removed subtitles data and functionality
+    // Ensure audio plays automatically
+    audio.play().catch(error => {
+        console.log("Audio playback failed:", error);
+    });
 });
